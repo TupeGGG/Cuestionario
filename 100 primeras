@@ -1,0 +1,228 @@
+const questions = [
+    {
+        question: "¿Cuál es el hueso más largo del cuerpo humano?",
+        options: ["Fémur", "Húmero", "Tibia", "Peroné"],
+        answer: "Fémur"
+    },
+    {
+        question: "¿Dónde se encuentra la rótula?",
+        options: ["Codo", "Rodilla", "Tobillo", "Hombro"],
+        answer: "Rodilla"
+    },
+    {
+        question: "¿Cuál de los siguientes huesos se encuentra en el cráneo?",
+        options: ["Escápula", "Clavícula", "Parietal", "Fémur"],
+        answer: "Parietal"
+    },
+    {
+        question: "¿Qué hueso conecta el brazo con el tronco?",
+        options: ["Escápula", "Radio", "Clavícula", "Húmero"],
+        answer: "Clavícula"
+    },
+    {
+        question: "¿Dónde se encuentra el hueso escafoides?",
+        options: ["Mano", "Pie", "Cráneo", "Columna vertebral"],
+        answer: "Mano"
+    },
+    {
+        question: "¿Cuál de los siguientes huesos forma parte de la pelvis?",
+        options: ["Fémur", "Ilion", "Peroné", "Radio"],
+        answer: "Ilion"
+    },
+    {
+        question: "¿Cuál es el nombre del hueso de la cadera?",
+        options: ["Fémur", "Ilion", "Tibia", "Costilla"],
+        answer: "Ilion"
+    },
+    {
+        question: "¿Cuántas vértebras tiene la columna vertebral humana?",
+        options: ["24", "33", "12", "7"],
+        answer: "33"
+    },
+    {
+        question: "¿Cuál es el hueso que se encuentra en el antebrazo junto con el radio?",
+        options: ["Húmero", "Escápula", "Peroné", "Cúbito"],
+        answer: "Cúbito"
+    },
+    {
+        question: "¿Qué huesos forman la parte superior de la boca?",
+        options: ["Maxilares", "Mandíbulas", "Hioides", "Clavículas"],
+        answer: "Maxilares"
+    },
+    {
+        question: "¿Cuál es el hueso que protege el cerebro?",
+        options: ["Fémur", "Cráneo", "Columna vertebral", "Mandíbula"],
+        answer: "Cráneo"
+    },
+    {
+        question: "¿Dónde se encuentra el hueso esternón?",
+        options: ["Codo", "Tórax", "Rodilla", "Cráneo"],
+        answer: "Tórax"
+    },
+    {
+        question: "¿Cuál es el hueso más pequeño del cuerpo humano?",
+        options: ["Estribo", "Escápula", "Fémur", "Radio"],
+        answer: "Estribo"
+    },
+    {
+        question: "¿Dónde se encuentra el hueso esfenoides?",
+        options: ["Cráneo", "Pie", "Mano", "Columna vertebral"],
+        answer: "Cráneo"
+    },
+    {
+        question: "¿Qué hueso forma la parte posterior del cráneo?",
+        options: ["Parietal", "Occipital", "Temporal", "Frontal"],
+        answer: "Occipital"
+    },
+    {
+        question: "¿Qué huesos forman la caja torácica?",
+        options: ["Costillas", "Vértebras", "Escápulas", "Clavículas"],
+        answer: "Costillas"
+    },
+    {
+        question: "¿Cuál es la función principal del hueso hioides?",
+        options: ["Protección del corazón", "Soporte de la lengua", "Movimiento del brazo", "Protección del cerebro"],
+        answer: "Soporte de la lengua"
+    },
+    {
+        question: "¿Dónde se encuentra el hueso calcáneo?",
+        options: ["Mano", "Pie", "Rodilla", "Codo"],
+        answer: "Pie"
+    },
+    {
+        question: "¿Qué hueso forma la base del cráneo?",
+        options: ["Etmoides", "Occipital", "Maxilar", "Nasal"],
+        answer: "Occipital"
+    },
+    {
+        question: "¿Qué hueso se articula con el fémur en la cadera?",
+        options: ["Tibia", "Ilion", "Peroné", "Escápula"],
+        answer: "Ilion"
+    },
+    {
+        question: "¿Qué hueso forma el talón del pie?",
+        options: ["Astrágalo", "Calcáneo", "Cuboides", "Escafoides"],
+        answer: "Calcáneo"
+    },
+    {
+        question: "¿Cuál de los siguientes huesos se encuentra en la pierna?",
+        options: ["Radio", "Tibia", "Húmero", "Clavícula"],
+        answer: "Tibia"
+    },
+    {
+        question: "¿Qué huesos forman el esqueleto de la mano?",
+        options: ["Metatarsianos", "Metacarpianos", "Tarsianos", "Carpos"],
+        answer: "Metacarpianos"
+    },
+    {
+        question: "¿Qué hueso se encuentra en el tobillo?",
+        options: ["Radio", "Astrágalo", "Húmero", "Escápula"],
+        answer: "Astrágalo"
+    },
+    {
+        question: "¿Cuál es el hueso más grande del pie?",
+        options: ["Calcáneo", "Metatarso", "Astrágalo", "Cuboides"],
+        answer: "Calcáneo"
+    },
+    {
+        question: "¿Cuál de los siguientes huesos se encuentra en la cabeza?",
+        options: ["Húmero", "Temporal", "Radio", "Tibia"],
+        answer: "Temporal"
+    },
+    {
+        question: "¿Qué hueso forma la parte inferior de la mandíbula?",
+        options: ["Maxilar", "Mandíbula", "Hioides", "Frontal"],
+        answer: "Mandíbula"
+    },
+    {
+        question: "¿Dónde se encuentra el hueso lacrimal?",
+        options: ["Cráneo", "Pie", "Mano", "Columna vertebral"],
+        answer: "Cráneo"
+    },
+    {
+        question: "¿Qué hueso forma la parte lateral del cráneo?",
+        options: ["Frontal", "Parietal", "Temporal", "Occipital"],
+        answer: "Temporal"
+    },
+    {
+        question: "¿Dónde se encuentra el hueso esfenoides?",
+        options: ["Cráneo", "Pie", "Mano", "Columna vertebral"],
+        answer: "Cráneo"
+    },
+    {
+        question: "¿Qué hueso forma la parte posterior del cráneo?",
+        options: ["Parietal", "Occipital", "Temporal", "Frontal"],
+        answer: "Occipital"
+    },
+    {
+        question: "¿Qué huesos forman la caja torácica?",
+        options: ["Costillas", "Vértebras", "Escápulas", "Clavículas"],
+        answer: "Costillas"
+    },
+    {
+        question: "¿Cuál es la función principal del hueso hioides?",
+        options: ["Protección del corazón", "Soporte de la lengua", "Movimiento del brazo", "Protección del cerebro"],
+        answer: "Soporte de la lengua"
+    },
+    {
+        question: "¿Dónde se encuentra el hueso calcáneo?",
+        options: ["Mano", "Pie", "Rodilla", "Codo"],
+        answer: "Pie"
+    },
+    {
+        question: "¿Qué hueso forma la base del cráneo?",
+        options: ["Etmoides", "Occipital", "Maxilar", "Nasal"],
+        answer: "Occipital"
+    },
+    {
+        question: "¿Qué hueso se articula con el fémur en la cadera?",
+        options: ["Tibia", "Ilion", "Peroné", "Escápula"],
+        answer: "Ilion"
+    },
+    {
+        question: "¿Qué hueso forma el talón del pie?",
+        options: ["Astrágalo", "Calcáneo", "Cuboides", "Escafoides"],
+        answer: "Calcáneo"
+    },
+    {
+        question: "¿Cuál de los siguientes huesos se encuentra en la pierna?",
+        options: ["Radio", "Tibia", "Húmero", "Clavícula"],
+        answer: "Tibia"
+    },
+    {
+        question: "¿Qué huesos forman el esqueleto de la mano?",
+        options: ["Metatarsianos", "Metacarpianos", "Tarsianos", "Carpos"],
+        answer: "Metacarpianos"
+    },
+    {
+        question: "¿Qué hueso se encuentra en el tobillo?",
+        options: ["Radio", "Astrágalo", "Húmero", "Escápula"],
+        answer: "Astrágalo"
+    },
+    {
+        question: "¿Cuál es el hueso más grande del pie?",
+        options: ["Calcáneo", "Metatarso", "Astrágalo", "Cuboides"],
+        answer: "Calcáneo"
+    },
+    {
+        question: "¿Cuál de los siguientes huesos se encuentra en la cabeza?",
+        options: ["Húmero", "Temporal", "Radio", "Tibia"],
+        answer: "Temporal"
+    },
+    {
+        question: "¿Qué hueso forma la parte inferior de la mandíbula?",
+        options: ["Maxilar", "Mandíbula", "Hioides", "Frontal"],
+        answer: "Mandíbula"
+    },
+    {
+        question: "¿Dónde se encuentra el hueso lacrimal?",
+        options: ["Cráneo", "Pie", "Mano", "Columna vertebral"],
+        answer: "Cráneo"
+    },
+    {
+        question: "¿Qué hueso forma la parte lateral del cráneo?",
+        options: ["Frontal", "Parietal", "Temporal", "Occipital"],
+        answer: "Temporal"
+    },
+    // Continuar con las restantes preguntas hasta completar las 100
+];
